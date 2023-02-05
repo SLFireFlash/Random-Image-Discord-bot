@@ -4,6 +4,13 @@ import io
 import aiohttp
 from discord.ext import commands
 
+import fun
+
+#keep alive
+from keep_alive import keep_alive
+
+keep_alive()
+
 #client = discord.Client()
 client = commands.Bot(command_prefix="/", intents=discord.Intents.all())
 
